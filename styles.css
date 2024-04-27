@@ -1,0 +1,112 @@
+body > * {
+    margin: 0;
+    position: relative; 
+    }
+#full-screen-main-entrens > * {
+        border: 1px solid rgb(0, 0, 0);
+        position: relative;
+
+     }
+
+    #full-screen-main-entrens {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    }
+    #background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    #video-controls {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    } 
+    #main-menu-line > * {
+        
+        position: sticky;           /* фиксирует #main-menu-line */     
+        top: 0;                 /* фиксирует #main-menu-line в верхней части экрана */
+        padding: 5px;
+    }
+    #main-menu-line::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* затемнение на 50% */
+    }
+        #logo-menu {
+            position: relative;
+            left: 0;    /* располагает #logo-menu в левой части экрана */
+            top: 0;   /* располагает #logo-menu в верхней части экрана */
+            height: 100%; /* занимает всю высоту родительского элемента */
+            width: 5%; /* занимает 5% ширины родительского элемента */
+            display: inline-block; /* делает #logo-menu блочным элементом */
+            
+        }
+         
+        #menu {
+            position: absolute; /* позволяет позиционировать #menu относительно #logo-menu */
+            bottom: 0;    /* располагает #menu в нижней части #logo-menu */
+            height:  33.33%; /* занимает нижнюю треть #logo-menu */
+            display: inline-block; /* делает #menu блочным элементом */
+            width: 95%; /* занимает 95% ширины #logo-menu */
+        }
+        
+        #menu button {
+            position: relative; /* позволяет позиционировать кнопку относительно #menu */
+            bottom: 10px; /* располагает кнопку в нижней части #menu */
+            width: 100%; /* делает кнопку занимающей всю ширину #menu */
+            margin-bottom: 5px; /* устанавливает промежуток между кнопками */
+        }
+        
+        #dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        #logo {
+            position: absolute; /* позволяет позиционировать #logo относительно #logo-menu */
+            top: 0; /* располагает #logo в верхней части #logo-menu */
+            height: 66.66%; /* делает #logo занимающим верхние две трети #logo-menu */ 
+            width: 100%; /* делает #logo занимающим всю ширину #logo-menu */
+
+        }
+        #menu:hover #dropdown {
+            display: block;
+        }
+    #social-links {
+        position: absolute;
+        top: 5px;
+        right: 0px;
+    }
+    #login {
+        position: absolute;
+        right: 0px;
+        top: calc(10px + 100%); /* Установка промежутка между блоками */
+        margin-bottom: 15px; /* устанавливает промежуток между кнопками */
+    }
+#content {
+    text-align: center;
+    margin: auto;}
+    #drones-section {   
+        display: flex; 
+        justify-content: space-between;
+    } 
+    .column {
+        flex: 1;
+        padding: 1em;
+        box-sizing: border-box;
+    } 
+#chat  {
+    position: fixed;
+    right: 0;   
+}

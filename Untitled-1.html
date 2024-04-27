@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Мой сайт</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+    <div id="full-screen-main-entrens">
+        <video id="background-video" loop autoplay muted>
+            <source src="IMG_2387.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="video-controls">
+            <button id="play-pause">Play/Pause</button>
+            <button id="mute-unmute">Mute/Unmute</button>
+        </div>
+        <div id="main-menu-line">
+             <div id="logo-menu">
+                <div id="logo">
+                    <img src="logo.png" alt="Логотип">
+                </div>
+                <div id="menu">
+                    <button>Меню</button>
+                    <div id="dropdown">
+                        <a href="/">Главная</a>
+                        <a href="/about">О нас</a>
+                        <a href="/contact">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div id="social-links">
+                <a href="http://facebook.com">Facebook</a>
+                <a href="http://twitter.com">Twitter</a>
+                <a href="http://instagram.com">Instagram</a>
+            </div>
+            <div id="login">
+                <form action="/login" method="post">
+                    <label for="username">Имя пользователя:</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password">
+                    <input type="submit" value="Войти">
+                </form>
+            </div>
+    
+        </div>
+    </div>
+    <div id="content">
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <p>Здесь вы найдете много интересной информации.</p>
+        <p>Например, вы можете узнать о нас больше <a href="/about">здесь</a>.</p>
+        <p>Или связаться с нами <a href="/contact">здесь</a>.</p>
+
+    <div id="drones-section">
+        <div class="column">
+            <h2>Дроны в фотографии</h2>
+            <p>Дроны открывают новые возможности для фотографов, позволяя делать уникальные снимки с воздуха.</p>
+            <!-- Дополнительная информация -->
+        </div>
+        <div class="column">
+            <h2>Дроны в доставке</h2>
+            <p>Дроны могут использоваться для быстрой и эффективной доставки небольших грузов.</p>
+            <!-- Дополнительная информация -->
+        </div>
+        <div class="column">
+            <h2>Дроны в исследованиях</h2>
+            <p>Дроны помогают исследователям получать данные в труднодоступных местах.</p>
+            <!-- Дополнительная информация -->
+        </div>
+    </div>
+    </div>
+    <div id="chat">
+    <div id="chat-messages">
+        <!-- Сообщения чата будут добавляться здесь -->
+    </div>
+    <form id="chat-form" action="/send-message" method="post">
+        <input type="text" id="chat-input" name="message" placeholder="Введите сообщение...">
+        <input type="submit" value="Отправить">
+    </form>
+    </div>    
+    <script src="script.js"></script>
+    </body>
+</html>
